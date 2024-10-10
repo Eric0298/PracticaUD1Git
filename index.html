@@ -50,6 +50,19 @@
         }
     </script>
 
+    <!-- Sección Modificar Estilos CSS -->
+    <section id="modificar-estilos">
+        <h2>Modificar Estilos CSS</h2>
+        <div id="caja" style="width: 100px; height: 100px; background-color: blue;"></div>
+        <button onclick="modificarEstilo()">Modificar estilo</button>
+    </section>
+    
+    <script>
+        function modificarEstilo() {
+            document.getElementById('caja').style.backgroundColor = "red";
+        }
+    </script>
+
     <footer>
         <p>Footer del sitio</p>
     </footer>
