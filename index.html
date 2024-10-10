@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Interacción con HTML y JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de Interacción con HTML y JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Modificar contenido HTML</a></li>
+                <li><a href="#">Modificar estilos CSS</a></li>
+                <li><a href="#">Modificar atributos HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Bienvenido al curso</h2>
+        <p>Este curso enseña cómo interactuar con HTML mediante JavaScript.</p>
+    </section>
+
+    <!-- Sección Modificar Contenido HTML -->
+    <section id="modificar-contenido">
+        <h2>Modificar Contenido HTML</h2>
+        <p id="parrafo">Este es un párrafo que se modificará con JavaScript.</p>
+        <button onclick="modificarContenido()">Modificar contenido</button>
+    </section>
+
+    <script>
+        function modificarContenido() {
+            document.getElementById('parrafo').innerHTML = "El contenido ha sido modificado!";
+        }
+    </script>
+
+    <!-- Sección Modificar Atributos HTML -->
+    <section id="modificar-atributos">
+        <h2>Modificar Atributos HTML</h2>
+        <img id="imagen" src="images/ejemplo.jpg" alt="Imagen de ejemplo" width="500" height="700">
+        <button onclick="modificarAtributo()">Modificar atributo</button>
+    </section>
+    
+    <script>
+        function modificarAtributo() {
+            document.getElementById('imagen').src = "images/ejemplo2.jpg";
+        }
+    </script>
+
+    <!-- Sección Modificar Estilos CSS -->
+    <section id="modificar-estilos">
+        <h2>Modificar Estilos CSS</h2>
+        <div id="caja" style="width: 100px; height: 100px; background-color: blue;"></div>
+        <button onclick="modificarEstilo()">Modificar estilo</button>
+    </section>
+    
+    <script>
+        function modificarEstilo() {
+            document.getElementById('caja').style.backgroundColor = "red";
+        }
+    </script>
+
+    <footer>
+        <p>Footer del sitio</p>
+    </footer>
+</body>
+</html>
+
