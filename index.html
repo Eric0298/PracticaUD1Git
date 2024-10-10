@@ -23,21 +23,36 @@
         <h2>Bienvenido al curso</h2>
         <p>Este curso enseña cómo interactuar con HTML mediante JavaScript.</p>
     </section>
+
+    <!-- Sección Modificar Contenido HTML -->
     <section id="modificar-contenido">
         <h2>Modificar Contenido HTML</h2>
         <p id="parrafo">Este es un párrafo que se modificará con JavaScript.</p>
         <button onclick="modificarContenido()">Modificar contenido</button>
     </section>
-    
+
     <script>
         function modificarContenido() {
             document.getElementById('parrafo').innerHTML = "El contenido ha sido modificado!";
         }
     </script>
+
+    <!-- Sección Modificar Atributos HTML -->
+    <section id="modificar-atributos">
+        <h2>Modificar Atributos HTML</h2>
+        <img id="imagen" src="images/ejemplo.jpg" alt="Imagen de ejemplo" width="500" height="700">
+        <button onclick="modificarAtributo()">Modificar atributo</button>
+    </section>
     
+    <script>
+        function modificarAtributo() {
+            document.getElementById('imagen').src = "images/ejemplo2.jpg";
+        }
+    </script>
 
     <footer>
         <p>Footer del sitio</p>
     </footer>
 </body>
 </html>
+
